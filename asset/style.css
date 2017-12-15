@@ -1,0 +1,426 @@
+* { box-sizing: border-box; }
+
+body {
+    font: 400 14px 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 30px;
+    color: #727272;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2.2;
+    overflow-x: hidden;
+}
+
+a {
+    transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a[href^="tel:"] {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s;
+}
+
+.grid {
+  background: #EEE;
+  max-width: 1200px;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  width: 160px;
+  height: 120px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.grid-item--width2 { width: 320px; }
+.grid-item--width3 { width: 480px; }
+.grid-item--width4 { width: 640px; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: transparent;
+}
+
+.preloader .anim {
+    color: #FFF;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preloader-left {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 999;
+    transition: .7s .3s transform ease-in-out;
+}
+
+.slide-left {
+    transform: translate3d(-100%, 0, 0);
+    will-change: transform;
+}
+
+.preloader-right {
+    display: none;
+    position: fixed;
+    width: 50%;
+    right: 0;
+    height: 100%;
+    background: white;
+    z-index: 999;
+    transition: .7s .3s transform ease-in-out;
+}
+
+.slide-right {
+    transform: translate3d(100%, 0, 0);
+    will-change: transform;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        -ms-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.pulse {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+
+.image-overlay {
+    background-color: rgba(0, 0, 0, 1);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+.image-overlay.light {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+.opacity {
+    opacity: 0.5;
+}
+
+.menu-item {
+    cursor: pointer;
+}
+
+h2.menu-item {
+    position: relative;
+    color: #FFF;
+    margin: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    transition: all 1s ease-out;
+}
+
+.dark h2.menu-item {
+    color: #333;
+}
+
+h2.menu-item:before {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+h2.contact.menu-item:before {
+    content: '01';
+}
+
+h2.movies.menu-item:before {
+    content: '02';
+}
+
+h2.cities-block-menu.menu-item:before {
+    content: '03';
+}
+
+h2.signup.menu-item:before {
+    content: '04';
+}
+
+.menu-block:hover h2.menu-item:before {
+    top: -20px;
+    left: -40px;
+}
+
+h2.menu-item:after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: -20px;
+    width: 70px;
+    height: 1px;
+    background: #FFF;
+    transition: all 0.5s ease;
+}
+
+.dark h2.menu-item:after {
+    background: #333;
+}
+
+.menu-block:hover h2.menu-item:after {
+    top: 35px;
+    left: -40px;
+}
+
+.menu-block:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+.name-block {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: table;
+    z-index: 1
+}
+
+.name-block-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 240px;
+    -ms-transform: rotate(34deg);
+    -webkit-transform: rotate(34deg);
+    transform: rotate(34deg);
+}
+
+.name-block-container h1 {
+    font-size: 50px;
+		text-transform: capitalize;
+		font-weight: 700;
+		color: #FFF;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+}
+
+
+.contact-block {
+    position: absolute;
+    width: 430px;
+    height: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: table;
+    transition: all 0.5s;
+    z-index: 99;
+}
+
+.dark .contact-block {
+    border: 1px solid rgba(51, 51, 51, 0.4);
+}
+
+.contact-block:hover {
+    border: 15px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-block-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 150px 0 0 70px;
+    -ms-transform: rotate(34deg);
+    -webkit-transform: rotate(34deg);
+    transform: rotate(34deg);
+}
+
+
+.movies-block {
+    position: absolute;
+    width: 430px;
+    height: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: table;
+    transition: all 0.5s;
+    z-index: 1
+}
+
+.dark .movies-block {
+    border: 1px solid rgba(51, 51, 51, 0.4);
+}
+
+.movies-block:hover {
+    border: 15px solid rgba(255, 255, 255, 0.1);
+}
+
+.movies-block-container {
+    display: table-cell;
+    vertical-align: middle;
+    -ms-transform: rotate(34deg);
+    -webkit-transform: rotate(34deg);
+    transform: rotate(34deg);
+}
+
+.cities-block {
+    position: absolute;
+    width: 430px;
+    height: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: table;
+    transition: all 0.5s;
+    z-index: 1
+}
+
+.dark .cities-block {
+    border: 1px solid rgba(51, 51, 51, 0.4);
+}
+
+.cities-block:hover {
+    border: 15px solid rgba(255, 255, 255, 0.1);
+}
+
+.cities-block-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 50px;
+    -ms-transform: rotate(34deg);
+    -webkit-transform: rotate(34deg);
+    transform: rotate(34deg);
+}
+
+.signup-block {
+    position: absolute;
+    width: 430px;
+    height: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: table;
+    transition: all 0.5s;
+    z-index: 1
+}
+
+.dark .signup-block {
+    border: 1px solid rgba(51, 51, 51, 0.4);
+}
+
+.signup-block:hover {
+    border: 15px solid rgba(255, 255, 255, 0.1);
+}
+
+.signup-block-container {
+    display: table-cell;
+    vertical-align: middle;
+    -ms-transform: rotate(34deg);
+    -webkit-transform: rotate(34deg);
+    transform: rotate(34deg);
+}
+
+@media (min-width:985px) {
+    .name-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: -200px;
+        top: -80px;
+    }
+    .contact-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 419px;
+        top: -160px;
+        width: 350px;
+        height: 300px;
+    }
+    .movies-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 586px;
+        top: 88px;
+        width: 350px;
+        height: 300px;
+    }
+    .cities-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 753px;
+        top: 335px;
+        width: 350px;
+        height: 300px;
+    }
+    .signup-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 900px;
+        top: -70px;
+        width: 350px;
+        height: 300px;
+    }
+}
