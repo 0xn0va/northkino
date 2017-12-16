@@ -1,4 +1,4 @@
-    div.container {
+    footer div.container, header div.container {
         margin: 0 auto;
         padding: 1em 1em;
         text-align: center;
