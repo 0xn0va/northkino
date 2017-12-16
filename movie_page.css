@@ -1,0 +1,89 @@
+    body {
+        margin: 0px;
+        background: rgba(31, 30, 26, 0.7);
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+        background: #f9f9f9;
+        /* background: rgba(0,0,0,0.75);*/
+        /*background: rgb(90, 90, 90);
+*/
+        font-size: 24px;
+        padding: 25px;
+    }
+
+    .parallax {
+        /*margin-top: 30px;*/
+        top: 30px;
+        min-height: 500px;
+        background: transparent;
+        /*background-position: 50% !important; height: 450px; background-size: 100%;*/
+    }
+
+
+
+    div.container {
+        margin: 0 auto;
+        padding: 1em 1em;
+        text-align: center;
+        background: #1f1e1a;
+    }
+
+    div.navBorders a {
+        color: #FFF !important;
+        text-decoration: none;
+        font: 20px Raleway;
+        margin: 0px 10px;
+        padding: 10px 10px;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+    }
+
+    div.navBorders a:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 2px;
+        height: 0px;
+        background: #fff;
+        opacity: 1;
+        transition: all 0.3s;
+    }
+
+
+    div.navBorders a:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        opacity: 1;
+        transition: all 0.3s;
+    }
+
+    div.navBorders a:hover:before {
+        height: 100%;
+    }
+
+    div.navBorders a:hover:after {
+        top: 100%;
+        opacity: 0;
+    }
+
+    div.transparent_box {
+        margin: 30px;
+        border: 1px solid black;
+        background: rgba(31, 30, 26, 0.4);
+    }
+
+    div.transparent_box p {
+        color: #fff;
+        font-weight: bold;
+        margin: 5%;
+    }
