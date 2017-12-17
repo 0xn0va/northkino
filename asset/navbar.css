@@ -1,52 +1,58 @@
-    footer div.container, header div.container {
-        margin: 0 auto;
-        padding: 1em 1em;
-        text-align: center;
-        background: #1f1e1a;
-        font-family: Raleway;
-    }
+footer,
+header div.container {
 
-    div.navBorders a {
-        color: #FFF !important;
-        text-decoration: none;
-        font: 20px Raleway;
-        margin: 0px 10px;
-        padding: 10px 10px;
-        position: relative;
-        z-index: 0;
-        cursor: pointer;
-    }
+    background: #1f1e1a !important;
+    font-family: Raleway;
+    color: #FFF !important;
+}
 
-    div.navBorders a:before {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 2px;
-        height: 0px;
-        background: #fff;
-        opacity: 1;
-        transition: all 0.3s;
-    }
+header div.container {
+    margin: 0 auto;
+    padding: 1em 1em;
+    text-align: center;
+}
+
+div.navBorders a {
+    color: #FFF !important;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+div.navBorders a:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background: #fff;
+    opacity: 1;
+    transition: all 0.3s;
+}
 
 
-    div.navBorders a:after {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        opacity: 1;
-        transition: all 0.3s;
-    }
+div.navBorders a:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    opacity: 1;
+    transition: all 0.3s;
+}
 
-    div.navBorders a:hover:before {
-        height: 100%;
-    }
+div.navBorders a:hover:before {
+    height: 100%;
+}
 
-    div.navBorders a:hover:after {
-        top: 100%;
-        opacity: 0;
-    }
+div.navBorders a:hover:after {
+    top: 100%;
+    opacity: 0;
+}
