@@ -32,34 +32,28 @@ img {
     transition: all 0.3s;
 }
 
-.grid {
-  background: #EEE;
-  max-width: 1200px;
+div#masonry { 
+  display: flex; 
+  flex-direction: column; 
+  flex-wrap: wrap;
+  height: 100vw;
+  max-height: 1100px;
+  font-size: 0;  
 }
+div#masonry img {  
+  width: 33.3%;
+  transition: .8s opacity;
+} 
+div#masonry:hover img { opacity: 0.3; }
+div#masonry:hover img:hover { opacity: 1; } 
 
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
+@supports not (flex-wrap: wrap) {
+  div#masonry { display: block; }
+  div#masonry img {  
+  display: inline-block;
+  vertical-align: top;
+  }
 }
-
-.grid-item {
-  width: 160px;
-  height: 120px;
-  float: left;
-  background: #D26;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
-}
-
-.grid-item--width2 { width: 320px; }
-.grid-item--width3 { width: 480px; }
-.grid-item--width4 { width: 640px; }
-
-.grid-item--height2 { height: 200px; }
-.grid-item--height3 { height: 260px; }
-.grid-item--height4 { height: 360px; }
 
 .preloader {
     position: fixed;
