@@ -33,7 +33,7 @@ img {
 }
 
 div#masonry { 
-  display: flex; 
+  display: table-cell; 
   flex-direction: column; 
   flex-wrap: wrap;
   height: 100vw;
