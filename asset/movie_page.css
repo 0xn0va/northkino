@@ -58,4 +58,31 @@
         border-color: #16a4de;
     }
 
- 
+   /* Not appearing*/
+
+/*  .btn-time {
+      border-color: #87c4f2;
+      transition: none;
+  }
+
+  a.btn-time,
+  a.btn-time:focus,
+  {
+    box-shadow: 3px 3px 0 #87c4f2, 2px 2px 0 #87c4f2, 1px 1px 0 #87c4f2;
+  }
+
+  a.btn-time:hover,
+  {
+      box-shadow: 5px 5px 0 #87c4f2, 4px 4px 0 #87c4f2, 3px 3px 0 #87c4f2, 2px 2px 0 #87c4f2, 1px 1px 0 #87c4f2;
+      transform: translate(-2px, -2px);
+      transition: all .3s ease;
+  }
+
+  a.btn-time:active,
+  {
+      box-shadow: none;
+      transform: translate(4px, 4px) !important;
+      transition: all .1s ease;
+  }
+
+ */
