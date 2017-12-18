@@ -6,21 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="NorthKino">
     <meta name="author" content="Loman,Shajadi">
-    <link rel="icon" href="icon/favicon.ico"> <!-- Icon -->
+    <link rel="icon" href="icon/favicon.ico">
+    <!-- Icon -->
     <title>Movie Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="asset/movie_page.css">
     <link rel="stylesheet" type="text/css" href="asset/navbar.css">
+    <style type="text/css">
+
+    </style>
 </head>
 
 <body>
     <header>
-        <div class="container navBorders">
-            <a href="index.html">HOME</a>
-            <a href="movies.html">ONGOING MOVIES</a>
-            <a>SIGN UP</a>
-            <a href="contact_us.html">CONTACT</a>
-        </div>
+        <ul class="container navBorders">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html">ONGOING MOVIES</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CITIES</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Helsinki</a>
+                    <a class="dropdown-item" href="#">Turku</a>
+                    <a class="dropdown-item" href="#">Tampere</a>
+                    <a class="dropdown-item" href="#">Oulu</a>
+                    <a class="dropdown-item" href="#">Rovaniemi</a>
+                </div>
+            </li>
+            <li><a href="index.html">SIGN UP</a></li>
+            <li><a href="index.html">CONTACT</a></li>
+        </ul>
     </header>
     <main>
         <div class="container">

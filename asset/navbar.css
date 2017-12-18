@@ -1,18 +1,22 @@
-footer,
-header div.container {
+header ul.container,
+footer {
 
     background: #1f1e1a !important;
     font-family: Raleway;
-    color: #FFF !important;
 }
 
-header div.container {
-    margin: 0 auto;
-    padding: 1em 1em;
+header ul.container {
+
+    list-style: none;
+    padding: 24px;
     text-align: center;
 }
 
-div.navBorders a {
+header ul.container li {
+    display: inline-flex;
+}
+
+ul.navBorders a {
     color: #FFF !important;
     text-decoration: none;
     font: 20px Raleway;
@@ -23,7 +27,13 @@ div.navBorders a {
     cursor: pointer;
 }
 
-div.navBorders a:before {
+
+
+
+
+/*View on hover*/
+
+ul.navBorders a:before {
     content: "";
     position: absolute;
     top: 0px;
@@ -36,7 +46,12 @@ div.navBorders a:before {
 }
 
 
-div.navBorders a:after {
+
+
+
+/*The default view */
+
+ul.navBorders a:after {
     content: "";
     position: absolute;
     top: 0px;
@@ -48,11 +63,31 @@ div.navBorders a:after {
     transition: all 0.3s;
 }
 
-div.navBorders a:hover:before {
+ul.navBorders a:hover:before {
     height: 100%;
 }
 
-div.navBorders a:hover:after {
-    top: 100%;
+ul.navBorders a:hover:after {
+    /*top: 100%; ?????*/
     opacity: 0;
+}
+
+.dropdown-toggle::after {
+    border: none;
+    margin: 0;
+}
+
+.dropdown-menu {
+    background-color: #1f1e1a !important;
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+.dropdown-item {
+    width: 85%;
+}
+
+.dropdown-item:hover {
+    background-color: #fff !important;
+    color: #1f1e1a !important;
 }
