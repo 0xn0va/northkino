@@ -87,7 +87,6 @@ function recalculateTotal(sc) {
 }
 $('#seat-map').addClass('animated bounceInLeft');
 $('.booking-details').addClass('animated bounceInRight');
-// $('#poster').addClass('animated pulse');
 $(document).ready(function(){
     $('#poster').hover(function(){
         $(this).addClass('animated pulse');
