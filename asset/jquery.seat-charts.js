@@ -358,13 +358,13 @@
 
 			var $row = $('<div></div>').addClass('seatCharts-row');
 				
-			if (settings.naming.left) {
-				$row.append(
-					$('<div></div>')
-						.addClass('seatCharts-cell seatCharts-space')
-						.text(settings.naming.rows[row])
-				);
-			}
+			// if (settings.naming.left) {
+			// 	$row.append(
+			// 		$('<div></div>')
+			// 			.addClass('seatCharts-cell seatCharts-space')
+			// 			.text(settings.naming.rows[row])
+			// 	);
+			// }
 
 			/*
 			 * Do this for each seat (letter)

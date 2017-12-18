@@ -12,12 +12,29 @@
         font-size: 24px;
         padding: 25px;
     }
+		
+		.containerPages {
+				max-width: 90%;
+				margin: 0 auto;
+				background-color: #1f1e1a;
+				border-radius: 5px;
+				border: 1px solid #16a4de;
+				font-size: 24px;
+				padding: 25px;
+		}
 
     .parallax {
         top: 30px;
         min-height: 500px;
         background: transparent;
     }
+		.table td {
+			border-color: #16a4de;
+			color: #fff;
+		}
+		h4{
+			color: #fff;
+		}
 
     div.transparent_box {
         margin: 30px;
