@@ -86,5 +86,13 @@ function recalculateTotal(sc) {
 	return total;
 }
 $('#seat-map').addClass('animated bounceInLeft');
-$('#title').addClass('animated bounceInDown');
 $('.booking-details').addClass('animated bounceInRight');
+// $('#poster').addClass('animated pulse');
+$(document).ready(function(){
+    $('#poster').hover(function(){
+        $(this).addClass('animated pulse');
+    });
+		$('#poster').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+    $(this).removeClass("animated pulse");
+	});
+});

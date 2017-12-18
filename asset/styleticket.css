@@ -44,6 +44,10 @@ label{
     text-transform: capitalize;
     font-weight: 500;
 }
+.poster:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
 p.copy_rights {
     color: #fff;
     font-size: 14px;
@@ -204,12 +208,14 @@ ul.book-left li {
     font-weight: 600;
     color: #16a4de;
     line-height: 1.9em;
+		list-style: none;
 }
 ul.book-right li {
     font-size: 16px;
     font-weight: 500;
     color: #fff;
     line-height: 1.9em;
+		list-style: none;
 }
 
 	.main {
