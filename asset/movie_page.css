@@ -27,8 +27,28 @@
         background: rgba(0, 0, 0, 0.3);
  font-family: "Roboto", "Segoe UI", "Helvetica Neue", "Times New Roman"}
 
-    div.transparent_box p {
+    div.transparent_box  {
         color: #fff;
         margin: 5%;
         font-size: 20px;
     }
+
+    div.btn_group {
+       
+        text-align: center;
+    }
+    div.btn_group a {
+        position: relative;
+        margin: 8px;
+    }
+
+    .btn-time {
+        color: #16a4de;
+        border-color: #16a4de;
+    }
+
+    .btn-time:hover {
+    color: #fff;
+    background-color: #16a4de;
+    border-color: #16a4de;
+}
