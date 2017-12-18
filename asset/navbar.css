@@ -17,7 +17,7 @@ header ul.container li {
 }
 
 ul.navBorders a {
-    color: #FFF !important;
+    color: #fff !important;
     text-decoration: none;
     font: 20px Raleway;
     margin: 0px 10px;
@@ -26,10 +26,6 @@ ul.navBorders a {
     z-index: 0;
     cursor: pointer;
 }
-
-
-
-
 
 /*View on hover*/
 
@@ -44,9 +40,6 @@ ul.navBorders a:before {
     opacity: 1;
     transition: all 0.3s;
 }
-
-
-
 
 
 /*The default view */
@@ -68,7 +61,6 @@ ul.navBorders a:hover:before {
 }
 
 ul.navBorders a:hover:after {
-    /*top: 100%; ?????*/
     opacity: 0;
 }
 
@@ -90,4 +82,9 @@ ul.navBorders a:hover:after {
 .dropdown-item:hover {
     background-color: #fff !important;
     color: #1f1e1a !important;
+}
+
+footer p, footer a {
+    color: #fff !important;
+    font-size: 20px;
 }
