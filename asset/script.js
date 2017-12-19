@@ -94,4 +94,10 @@ $(document).ready(function(){
 		$('#poster').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
     $(this).removeClass("animated pulse");
 	});
+	$('#dealtitle').hover(function(){
+			$(this).addClass('animated shake');
+	});
+	$('#dealtitle').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+	$(this).removeClass("animated shake");
+});
 });
