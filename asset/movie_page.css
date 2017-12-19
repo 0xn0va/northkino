@@ -40,6 +40,9 @@
 		  transform: scale(1.1);
 		}
 
+		.bookbtn {
+			margin-top: 15px;
+		}
     .parallax {
         top: 30px;
         min-height: 500px;
@@ -77,6 +80,12 @@
         position: relative;
         margin: 8px;
     }
+		.form-group {
+    margin-bottom: 1rem;
+    color: #16a4de;
+    border-color: #16a4de;
+    background: rgba(0, 0, 0, 0.3);
+}
 
     .form-group select, .form-group select:focus,
    /* .form-group select option, .form-group select option:focus, .form-group select option:active, */
