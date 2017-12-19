@@ -8,31 +8,66 @@
     <meta name="author" content="Loman,Shajadi">
     <link rel="icon" href="icon/favicon.ico">
     <title>Ticket Deals</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link rel="stylesheet" type="text/css" href="asset/styleticket.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-		<link rel="stylesheet" type="text/css" href="asset/movie_page.css">
-		<link rel="stylesheet" type="text/css" href="asset/navbar.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="asset/styleticket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="asset/movie_page.css">
+    <link rel="stylesheet" type="text/css" href="asset/navbar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style type="text/css">
+    .containerPages {
+        border: 1px solid #ff3c5c;
+        max-height: 450px;
+    }
+
+    .table td {
+        border-color: #ff3c5c;
+    }
+
+    .our-info p,
+    .our-info h3 {
+        color: #fff;
+        font-family: "Roboto", "Segoe UI", "Helvetica Neue", "Times New Roman";
+    }
+
+
+
+    .our-info p {
+        font-size: 18px;
+    }
+
+    .btn-buy {
+        color: #ff3c5c;
+        border-color: #ff3c5c;
+        background: rgba(0, 0, 0, 0.3);
+        margin-top: 10px;
+    }
+
+    .btn-buy:hover {
+        color: #fff;
+        background-color: #ff3c5c;
+        border-color: #ff3c5c;
+    }
+    </style>
 </head>
 <header>
-		<ul class="container navBorders">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="movies.html">ONGOING MOVIES</a></li>
-				<li class="dropdown">
-						<a class="dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CITIES</a>
-						<div class="dropdown-menu" aria-labelledby="dropdown01">
-								<a class="dropdown-item" href="#">Helsinki</a>
-								<a class="dropdown-item" href="#">Turku</a>
-								<a class="dropdown-item" href="#">Tampere</a>
-								<a class="dropdown-item" href="#">Oulu</a>
-								<a class="dropdown-item" href="#">Rovaniemi</a>
-						</div>
-				</li>
-				<li><a href="index.html">TICKET DEALS</a></li>
-				<li><a href="contact_us.html">CONTACT</a></li>
-		</ul>
+    <ul class="container navBorders">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="movies.html">ONGOING MOVIES</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CITIES</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">Helsinki</a>
+                <a class="dropdown-item" href="#">Turku</a>
+                <a class="dropdown-item" href="#">Tampere</a>
+                <a class="dropdown-item" href="#">Oulu</a>
+                <a class="dropdown-item" href="#">Rovaniemi</a>
+            </div>
+        </li>
+        <li><a href="index.html">TICKET DEALS</a></li>
+        <li><a href="contact_us.html">CONTACT</a></li>
+    </ul>
 </header>
 <main>
 
@@ -41,42 +76,18 @@
             <div class="row">
                 <div class="col-sm-6 ani">
                     <div class="our-info">
-                        <h4>Contact Us</h4>
-                        <div class="info">
-                            <table class="table">
-                                <tr>
-                                    <td class="icon-info"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i></td>
-                                    <td>040 0123 456</td>
-                                </tr>
-                                <tr>
-                                    <td class="icon-info"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></td>
-                                    <td>0124 - 4254780</td>
-                                </tr>
-                                <tr>
-                                    <td class="icon-info"><i class="fa fa-envelope" aria-hidden="true"></i></td>
-                                    <td>northkino@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td class="icon-info"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></td>
-                                    <td>
-                                        <p>Oulu</p>
-                                        <p><b>Registered At:</b></p>
-                                        <p>Oulu</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="feedback">
-                        <h4>Send us a message</h4>
-                        <input type="text" class="form-control" name="ur email" placeholder="Your email">
-                        <textarea class="form-control" rows="3" placeholder="Your message"></textarea>
-                        <button class="btn" type="button" name="button">Send</button>
+                        <h3>Christmas Ticket Deal!</h3>
+                        <p>Sold in sets of four.
+                            <br> Valid 25.12.2017 - 31.5.2018.
+                            <br> Vouchers can be used as payment for movie tickets, even for 3D movies. (not for opera, concert, theatre tickets etc., surcharge in Premium halls)
+                            <br> Vouchers are usable at cinema boxoffice or by their serial number online.
+                            <br> Printable vouchers can't be changed into E-vouchers!</p>
+                        <button class="btn btn-buy hvr-grow-shadow">Buy Now</button>
                     </div>
                 </div>
                 <div class="col-sm-6 ani2">
                     <div style="width:100%;height:600px">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1685.5653444041318!2d25.459612093360644!3d65.009581747094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468032bac1ee6457%3A0xd7f1c00cb15ecc00!2sUrheilutalo!5e0!3m2!1svi!2sfi!4v1512996417807" width="500" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <img src="images/movienight2.jpg" id="poster">
                     </div>
                 </div>
             </div>
@@ -93,4 +104,5 @@ $('.ani2').addClass('animated slideInRight');
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 </html>
